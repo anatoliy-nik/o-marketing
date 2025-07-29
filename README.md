@@ -1,1 +1,1 @@
-Сайт: https://anatoliy-nik.github.io/o-marketing/
+https://anatoliy-nik.github.io/o-marketing/
