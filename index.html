@@ -10,6 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="css/fancybox.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -156,8 +157,112 @@
         </div>
     </section>
 
+    <section class="portfolio">
+        <div class="container">
+            <div class="portfolio__top-line">
+                <h2 class="subtitle subtitle-2">Portfolio</h2>
+                <ul class="portfolio__filters">
+                    <li class="portfolio__filters-item">
+                        <button class="portfolio__filters-btn" type="button" data-filter="all">ALL</button>
+                    </li>
+                    <li class="portfolio__filters-item">
+                        <button class="portfolio__filters-btn" type="button"
+                            data-filter=".category-branding">BRANDING</button>
+                        <!-- data-filter=".category-branding" - это плагин mixitup обращается к элементам по имени класса-->
+                    </li>
+                    <li class="portfolio__filters-item">
+                        <button class="portfolio__filters-btn" type="button"
+                            data-filter=".category-design">DESIGN</button>
+                    </li>
+                    <li class="portfolio__filters-item">
+                        <button class="portfolio__filters-btn" type="button"
+                            data-filter=".category-photo">PHOTOGRAPHY</button>
+                    </li>
+                    <li class="portfolio__filters-item">
+                        <button class="portfolio__filters-btn" type="button"
+                            data-filter=".category-illustr">ILLUSTRATION</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="portfolio__content">
+            <div class="portfolio__item mix category-branding">
+                <!-- mix и category-branding это классы для работы плагина mixitup-->
+                <img src="images/portfolio/1.jpg" alt="Пример работ">
+                <a class="portfolio__item-link" href="#">SHOW PROJECT</a>
+            </div>
+            <div class="portfolio__item mix category-branding">
+                <img src="images/portfolio/2.jpg" alt="Пример работ">
+            </div>
+            <div class="portfolio__item mix category-design">
+                <img src="images/portfolio/3.jpg" alt="Пример работ">
+            </div>
+            <div class="portfolio__item mix category-design">
+                <img src="images/portfolio/4.jpg" alt="Пример работ">
+            </div>
+            <div class="portfolio__item mix category-photo">
+                <img src="images/portfolio/5.jpg" alt="Пример работ">
+            </div>
+            <div class="portfolio__item mix category-photo">
+                <img src="images/portfolio/6.jpg" alt="Пример работ">
+            </div>
+            <div class="portfolio__item mix category-illustr">
+                <img src="images/portfolio/7.jpg" alt="Пример работ">
+            </div>
+            <div class="portfolio__item mix category-illustr">
+                <img src="images/portfolio/8.jpg" alt="Пример работ">
+            </div>
+            <div class="portfolio__item mix category-illustr">
+                <img src="images/portfolio/9.jpg" alt="Пример работ">
+            </div>
+        </div>
+
+        <div class="portfolio__more">
+            <a class="portfolio__more-link" href="#">VIEW MORE PROJECTS</a>
+        </div>
+
+        <div class="container">
+            <blockquote class="portfolio__blockquote">
+                «Неважно какую историю вы рассказываете, главное – сделайте своего покупателя героем»
+                <span class="portfolio__blockquote-author">Крис Броган</span>
+            </blockquote>
+        </div>
+
+        <div class="portfolio__video" href="https://www.youtube.com/watch?v=PUdyuKaGQd4" data-fancybox>
+            <!-- data-fancybox служебный атрибут плагина fancybox -->
+            <a class="portfolio__link" href="#">
+                <img src="images/play.svg" alt="Play video">
+            </a>
+        </div>
+
+        <div class="container numbers">
+            <ul class="portfolio__numbers">
+                <li class="portfolio__numbers-item">
+                    <h5>305</h5>
+                    <span>Web Designs</span>
+                </li>
+                <li class="portfolio__numbers-item">
+                    <h5>220</h5>
+                    <span>Logo Designs</span>
+                </li>
+                <li class="portfolio__numbers-item">
+                    <h5>52</h5>
+                    <span>Print Designs</span>
+                </li>
+                <li class="portfolio__numbers-item">
+                    <h5>88</h5>
+                    <span>Mobile Apps</span>
+                </li>
+            </ul>
+        </div>
+
+    </section>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/fancybox.umd.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
