@@ -1,0 +1,128 @@
+
+/* основные брейкпоинты из метрики */
+
+@media (max-width: 1024px) {
+    .about__inner {
+        display: block;
+    }
+
+    .subtitle {
+        margin-bottom: 40px;
+    }
+    
+    .about__text, .expertise__text {
+        max-width: 100%;
+    }
+
+    .expertise__top {
+        display: block;
+    }
+
+    section {
+        padding: 70px 0;
+    }
+
+    .expertise__list {
+        display: block;
+    }
+
+    .expertise__item {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    .menu__list {
+        position: absolute;
+        z-index: 1;
+        background-color: #333;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        transform: translateY(-100%);
+        /* прикрепляю к низу header__top*/
+        /* и смещаю вниз на высоту себя */
+        display: block;
+        /* на мобилке нужен block, т.к. на декстопе flex */
+        text-align: center;
+        transition: all .5s;
+    }
+
+    .menu-active .menu__list {
+        transform: translateY(100%);
+    }
+
+    .menu-active img {
+        transform: rotate(90deg);
+    }
+
+    .menu__list-item+.menu__list-item {
+        margin-left: 0;
+    }
+
+    .menu__list-link {
+        display: inline-block;
+        padding: 15px;
+        color: #fff;
+    }
+
+    .header__title {
+        font-size: 60px;
+        line-height: 68px;
+    }
+
+    .header__menu-btn {
+        display: block;
+    }
+
+    .subtitle-3 {
+        font-size: 38px;
+    }
+
+    section {
+        padding: 50px 0;
+    }
+
+    .subtitle-2 {
+        font-size: 44px;
+    }
+
+    .expertise__percent {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .expertise__top {
+        margin-bottom: 70px;
+    }
+
+    .expertise__item {
+        padding-left: 70px;
+    }
+
+}
+
+@media (max-width: 430px) {
+
+    .header__title {
+        font-size: 44px;
+        line-height: 48px;
+    }
+
+    .subtitle-3 {
+        font-size: 30px;
+    }
+
+    .subtitle-2 {
+        font-size: 37px;
+    }
+
+   .expertise__item {
+        padding-left: 0;
+        padding-top: 60px;
+    }
+
+
+}

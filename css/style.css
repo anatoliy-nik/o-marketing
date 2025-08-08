@@ -106,7 +106,7 @@ body {
     max-width: 1190px;
     margin: 0 auto;
     padding: 0 10px;
-    border: 1px solid red;
+    border: 1px dotted grey;
 }
 
 section {
@@ -117,6 +117,7 @@ section {
 
 .header__top {
     /* min-height: 94px; */
+    position: relative;
 }
 
 .header__top-inner {
@@ -124,6 +125,13 @@ section {
     justify-content: space-between;
     align-items: center;
     min-height: 94px;
+}
+
+.header__menu-btn {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    display: none;
 }
 
 .menu__list {
@@ -179,6 +187,7 @@ section {
     color: #fff;
     line-height: 88px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .header__subtitle {
@@ -187,6 +196,7 @@ section {
     letter-spacing: 0.17em;
     color: #fcbb08;
     line-height: 20px;
+    text-align: center;
 }
 
 .header__icon {
@@ -206,7 +216,7 @@ section {
 }
 
 .about__text {
-    max-width: 770px;
+    max-width: 75%;
 }
 
 /* expertise */
@@ -249,7 +259,7 @@ section {
 }
 
 .expertise__text {
-    max-width: 770px;
+    max-width: 75%;
 }
 
 .expertise__list {
@@ -258,7 +268,9 @@ section {
 }
 
 .expertise__item {
-    border: 1px solid pink;
+    /* bo
+    
+    rder: 1px solid pink; */
     width: 370px;
     padding-left: 80px;
     position: relative;
