@@ -106,7 +106,7 @@ body {
     max-width: 1190px;
     margin: 0 auto;
     padding: 0 10px;
-    border: 1px dotted grey;
+    /* border: 1px dotted grey; */
 }
 
 section {
@@ -165,8 +165,8 @@ section {
 .header__content {
     background-image: url(../images/header-bg.jpg);
     background-repeat: no-repeat;
-    /* background-position: center center; */
-    background-position: center 94px;
+    background-position: center center;
+    /* background-position: center 94px; */
     background-size: cover;
     font-family: "Montserrat", sans-serif;
 }
@@ -186,7 +186,7 @@ section {
     font-size: 72px;
     color: #fff;
     line-height: 88px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     text-align: center;
 }
 
@@ -760,10 +760,6 @@ ul.pricing__item-descr {
     top: 0;
     right: 0;
     bottom: 0;
-}
-
-.main-form {
-    /* max-width: 570px; */
 }
 
 .main-form input, .main-form textarea {
